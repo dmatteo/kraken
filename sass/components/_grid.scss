@@ -23,13 +23,7 @@
 		margin-right: $grid-margins * -1;
 	}
 
-	.grid-fourth,
-	.grid-third,
-	.grid-half,
-	.grid-two-thirds,
-	.grid-three-fourths,
-	.grid-full,
-	.grid-img {
+    [class*='grid-'] {
 		float: left;
 		width: 100%;
 		padding-left: $grid-margins;
@@ -96,7 +90,8 @@
 }
 
 
-/*  Full 6-column grid.
+/*  Full 12-column grid.
+ *  Full 6-column grid.
  *  Four-column layout for .grid-img. */
 @media (min-width: $bp-medium) {
 
@@ -105,13 +100,29 @@
 		width: 25%;
 	}
 
+    .grid-twelfth {
+        width: 8.33333333333%;
+    }
+
+    .grid-sixth {
+        width: 16.66666666667%;
+    }
+
 	.grid-third {
 		width: 33.33333333333%;
 	}
 
+    .grid-five-twelfths {
+        width: 41.66666666667%;
+    }
+
 	.grid-half {
 		width: 50%;
 	}
+
+    .grid-seven-twelfths {
+        width: 58.333333333333%;
+    }
 
 	.grid-two-thirds {
 		width: 66.666666666667%;
@@ -121,10 +132,27 @@
 		width: 75%;
 	}
 
+    .grid-ten-twelfths {
+        width: 83.333333333333%;
+    }
 
-	/*  Offets let you shift grid elements to the right
+    .grid-eleven-twelfths {
+        width: 91.666666666667%;
+    }
+
+
+	/*  Offset let you shift grid elements to the right
 	 *  but stay aligned to the grid. */
-	.offset-fourth {
+
+    .offset-twelfth {
+        margin-left: 8.33333333333%;
+    }
+
+    .offset-sixth {
+        margin-left: 16.66666666667%;
+    }
+
+    .offset-fourth {
 		margin-left: 25%;
 	}
 
@@ -132,17 +160,33 @@
 		margin-left: 33.33333333333%;
 	}
 
+    .offset-five-twelfths {
+        margin-left: 41.66666666667%;
+    }
+
 	.offset-half {
 		margin-left: 50%;
 	}
 
-	.offset-two-thirds {
+    .offset-seven-twelfths {
+        margin-left: 58.333333333333%;
+    }
+
+    .offset-two-thirds {
 		margin-left: 66.666666666667%;
 	}
 
 	.offset-three-fourths {
 		margin-left: 75%;
 	}
+
+    .offset-ten-twelfths {
+        margin-left: 83.333333333333%;
+    }
+
+    .offset-eleven-twelfths {
+        margin-left: 91.666666666667%;
+    }
 
 }
 
