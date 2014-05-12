@@ -12,7 +12,6 @@
 	margin-right: auto;
 }
 
-
 /*  Still mostly single-column.
  *  Option to activate grid on small screens.
  *  Two-column layout for .grid-img. */
@@ -23,7 +22,7 @@
 		margin-right: $grid-margins * -1;
 	}
 
-    [class*='grid-'] {
+	[class*='grid-'] {
 		float: left;
 		width: 100%;
 		padding-left: $grid-margins;
@@ -59,7 +58,6 @@
 
 }
 
-
 /*  Still mostly single-column.
  *  Option to activate grid on medium screens.
  *  Three-column layout for .grid-img. */
@@ -89,7 +87,6 @@
 
 }
 
-
 /*  Full 12-column grid.
  *  Full 6-column grid.
  *  Four-column layout for .grid-img. */
@@ -100,29 +97,29 @@
 		width: 25%;
 	}
 
-    .grid-twelfth {
-        width: 8.33333333333%;
-    }
+	.grid-twelfth {
+		width: 8.33333333333%;
+	}
 
-    .grid-sixth {
-        width: 16.66666666667%;
-    }
+	.grid-sixth {
+		width: 16.66666666667%;
+	}
 
 	.grid-third {
 		width: 33.33333333333%;
 	}
 
-    .grid-five-twelfths {
-        width: 41.66666666667%;
-    }
+	.grid-five-twelfths {
+		width: 41.66666666667%;
+	}
 
 	.grid-half {
 		width: 50%;
 	}
 
-    .grid-seven-twelfths {
-        width: 58.333333333333%;
-    }
+	.grid-seven-twelfths {
+		width: 58.333333333333%;
+	}
 
 	.grid-two-thirds {
 		width: 66.666666666667%;
@@ -132,27 +129,26 @@
 		width: 75%;
 	}
 
-    .grid-ten-twelfths {
-        width: 83.333333333333%;
-    }
+	.grid-ten-twelfths {
+		width: 83.333333333333%;
+	}
 
-    .grid-eleven-twelfths {
-        width: 91.666666666667%;
-    }
-
+	.grid-eleven-twelfths {
+		width: 91.666666666667%;
+	}
 
 	/*  Offset let you shift grid elements to the right
 	 *  but stay aligned to the grid. */
 
-    .offset-twelfth {
-        margin-left: 8.33333333333%;
-    }
+	.offset-twelfth {
+		margin-left: 8.33333333333%;
+	}
 
-    .offset-sixth {
-        margin-left: 16.66666666667%;
-    }
+	.offset-sixth {
+		margin-left: 16.66666666667%;
+	}
 
-    .offset-fourth {
+	.offset-fourth {
 		margin-left: 25%;
 	}
 
@@ -160,19 +156,19 @@
 		margin-left: 33.33333333333%;
 	}
 
-    .offset-five-twelfths {
-        margin-left: 41.66666666667%;
-    }
+	.offset-five-twelfths {
+		margin-left: 41.66666666667%;
+	}
 
 	.offset-half {
 		margin-left: 50%;
 	}
 
-    .offset-seven-twelfths {
-        margin-left: 58.333333333333%;
-    }
+	.offset-seven-twelfths {
+		margin-left: 58.333333333333%;
+	}
 
-    .offset-two-thirds {
+	.offset-two-thirds {
 		margin-left: 66.666666666667%;
 	}
 
@@ -180,13 +176,13 @@
 		margin-left: 75%;
 	}
 
-    .offset-ten-twelfths {
-        margin-left: 83.333333333333%;
-    }
+	.offset-ten-twelfths {
+		margin-left: 83.333333333333%;
+	}
 
-    .offset-eleven-twelfths {
-        margin-left: 91.666666666667%;
-    }
+	.offset-eleven-twelfths {
+		margin-left: 91.666666666667%;
+	}
 
 }
 
