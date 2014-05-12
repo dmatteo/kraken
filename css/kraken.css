@@ -39,27 +39,22 @@
   width: device-width;
   zoom: 1.0;
 }
-
 @-moz-viewport {
   width: device-width;
   zoom: 1.0;
 }
-
 @-ms-viewport {
   width: device-width;
   zoom: 1.0;
 }
-
 @-o-viewport {
   width: device-width;
   zoom: 1.0;
 }
-
 @viewport {
   width: device-width;
   zoom: 1.0;
 }
-
 /* Remove browser defaults */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -185,13 +180,7 @@ a:active {
     margin-right: -1.4%;
   }
 
-  .grid-fourth,
-  .grid-third,
-  .grid-half,
-  .grid-two-thirds,
-  .grid-three-fourths,
-  .grid-full,
-  .grid-img {
+  [class*='grid-'] {
     float: left;
     width: 100%;
     padding-left: 1.4%;
@@ -251,7 +240,8 @@ a:active {
     width: 75%;
   }
 }
-/*  Full 6-column grid.
+/*  Full 12-column grid.
+ *  Full 6-column grid.
  *  Four-column layout for .grid-img. */
 @media (min-width: 40em) {
   .grid-fourth,
@@ -259,12 +249,28 @@ a:active {
     width: 25%;
   }
 
+  .grid-twelfth {
+    width: 8.33333333333%;
+  }
+
+  .grid-sixth {
+    width: 16.66666666667%;
+  }
+
   .grid-third {
     width: 33.33333333333%;
   }
 
+  .grid-five-twelfths {
+    width: 41.66666666667%;
+  }
+
   .grid-half {
     width: 50%;
+  }
+
+  .grid-seven-twelfths {
+    width: 58.333333333333%;
   }
 
   .grid-two-thirds {
@@ -275,8 +281,24 @@ a:active {
     width: 75%;
   }
 
-  /*  Offets let you shift grid elements to the right
+  .grid-ten-twelfths {
+    width: 83.333333333333%;
+  }
+
+  .grid-eleven-twelfths {
+    width: 91.666666666667%;
+  }
+
+  /*  Offset let you shift grid elements to the right
    *  but stay aligned to the grid. */
+  .offset-twelfth {
+    margin-left: 8.33333333333%;
+  }
+
+  .offset-sixth {
+    margin-left: 16.66666666667%;
+  }
+
   .offset-fourth {
     margin-left: 25%;
   }
@@ -285,8 +307,16 @@ a:active {
     margin-left: 33.33333333333%;
   }
 
+  .offset-five-twelfths {
+    margin-left: 41.66666666667%;
+  }
+
   .offset-half {
     margin-left: 50%;
+  }
+
+  .offset-seven-twelfths {
+    margin-left: 58.333333333333%;
   }
 
   .offset-two-thirds {
@@ -295,6 +325,14 @@ a:active {
 
   .offset-three-fourths {
     margin-left: 75%;
+  }
+
+  .offset-ten-twelfths {
+    margin-left: 83.333333333333%;
+  }
+
+  .offset-eleven-twelfths {
+    margin-left: 91.666666666667%;
   }
 }
 /* Add clearfix */
@@ -841,8 +879,7 @@ select:focus {
   /*  Specifies page margin */
   @page {
     margin: 0.5cm;
-}
-
+  }
   /*  Underline all links */
   a, a:visited {
     text-decoration: underline;
