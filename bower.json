@@ -1,12 +1,13 @@
 {
     "name": "kraken-css-twelfths",
-    "version": "3.0.1",
+    "version": "3.0.2",
     "authors": [
         "dmatteo <matteo.domenico@gmail.com"
         ],
     "description": "Bower package for the Kraken CSS framework, with the addition of the support for a 12 columns grid",
     "main": "sass/",
     "ignore": [
+        ".gitignore",
         "README.md",
         "index.html",
         "template.html",
