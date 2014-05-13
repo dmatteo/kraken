@@ -778,6 +778,48 @@ select:focus {
   }
 }
 /* =============================================================
+	HIDDEN (AND EXCLUSIVE VISIBILITY) CLASSES FOR SPECIFIC MEDIA
+ * ============================================================= */
+@media (min-width: 60em) {
+  .phone-visible {
+    display: none;
+  }
+
+  .tablet-visible {
+    display: none;
+  }
+
+  .desktop-hidden {
+    display: none;
+  }
+}
+@media (min-width: 30em) and (max-width: 59.9275em) {
+  .desktop-visible {
+    display: none;
+  }
+
+  .phone-visible {
+    display: none;
+  }
+
+  .tablet-hidden {
+    display: none;
+  }
+}
+@media (max-width: 30em) {
+  .desktop-visible {
+    display: none;
+  }
+
+  .tablet-visible {
+    display: none;
+  }
+
+  .phone-hidden {
+    display: none;
+  }
+}
+/* =============================================================
 	ALIGNMENT, SPACING & VISIBILITY
 	Override default alignment, spacing and visibilty.
  * ============================================================= */

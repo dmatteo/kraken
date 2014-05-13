@@ -1,0 +1,42 @@
+/* =============================================================
+	HIDDEN (AND EXCLUSIVE VISIBILITY) CLASSES FOR SPECIFIC MEDIA
+ * ============================================================= */
+
+// Desktop visualization
+@media (min-width: $bp-large) {
+  .phone-visible {
+    display: none;
+  }
+  .tablet-visible {
+    display: none;
+  }
+  .desktop-hidden {
+    display: none;
+  }
+}
+
+// Tablets only
+@media (min-width: $bp-small) and (max-width: $bp-large - calc-em(1px)) {
+  .desktop-visible {
+    display: none;
+  }
+  .phone-visible {
+    display: none;
+  }
+  .tablet-hidden {
+    display: none;
+  }
+}
+
+// Phone visualization
+@media (max-width: $bp-small) {
+  .desktop-visible {
+    display: none;
+  }
+  .tablet-visible {
+    display: none;
+  }
+  .phone-hidden {
+    display: none;
+  }
+}
